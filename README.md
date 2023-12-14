@@ -9,7 +9,7 @@ Travail de recherche , mettre en place de l'integration continue avec les GitHub
 ## Énoncé
 
 ### Pré-requis :
-- Sur base de votre mini-projet 32 (TDD)
+- Sur base de votre mini-projet 45 (TDD)
 - Usage de [JEST](https://jestjs.io/docs/getting-started) obligatoire
 - Utilisation pulls requests
 
