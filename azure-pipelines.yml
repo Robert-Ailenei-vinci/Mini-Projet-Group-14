@@ -1,5 +1,18 @@
 trigger:
-- main
+  branches:
+    include:
+    - main
+  paths:
+    exclude:
+    - README.md
+pr:
+  branches:
+    include:
+    - main
+  paths:
+    exclude:
+    - README.md 
+    ################################ not doing a CI because the README.md isn't linked with the program
 
 pool:
   vmImage: ubuntu-latest
