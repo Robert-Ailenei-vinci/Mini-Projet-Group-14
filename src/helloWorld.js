@@ -3,21 +3,15 @@ function greet (names) {
   let defaultValueArray = 'Hello, '
   let defaultAnd = 'and'
   const defaultValueUppercase = 'HELLO, '
-
   if (Array.isArray(names)) {
     const normalNames = []
     const upperNames = []
-
-    // let hello = "Hello";
-    // let and = "and";
-
     const chosenLanguage = getLanguage(names) // should get 'fr' / 'nl' / 'en'
     if (chosenLanguage) {
       const language = setLanguage(chosenLanguage) // return an array with [0] being Hello, etc and [1] being and, etc
       defaultValueArray = language[0]
       defaultAnd = language[1]
     }
-
     for (let i = 0; i < names.length; i++) {
       if (nameIsInUpperCase(names[i])) {
         upperNames.push(names[i])
@@ -25,7 +19,6 @@ function greet (names) {
         normalNames.push(names[i])
       }
     }
-
     if (normalNames.length > 0) {
       if (normalNames.length === 1) {
         defaultValueArray += normalNames[0] + '!'
@@ -41,7 +34,6 @@ function greet (names) {
       defaultValueArray +=
                 ' AND ' + defaultValueUppercase + upperNames.join(', ') + '!'
     }
-
     return defaultValueArray
   }
 
@@ -50,7 +42,6 @@ function greet (names) {
   }
 
   if (nameIsInUpperCase(names)) return `${defaultValueUppercase}${names}!`
-
   return `Hello, ${names}.`
 }
 
@@ -79,11 +70,10 @@ function getLanguage (names) {
   }
   return null
 }
-
 function setLanguage (language) {
   if (language === 'fr') return ['Bonjour, ', 'et']
   else if (language === 'en') return ['Hello, ', 'and']
   else if (language === 'nl') return ['Dag, ', 'en']
 }
 
-module.exports = { greet }
+module.exports = { greet, setLanguage }
