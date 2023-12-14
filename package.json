@@ -23,6 +23,7 @@
     "author": "FB",
     "license": "ISC",
     "devDependencies": {
+        "babel-cli": "^6.26.0",
         "cz-conventional-changelog": "^3.3.0",
         "eslint": "^8.52.0",
         "eslint-config-standard": "^17.1.0",
@@ -38,8 +39,5 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
-    },
-    "dependencies": {
-        "babel": "^6.23.0"
     }
 }
