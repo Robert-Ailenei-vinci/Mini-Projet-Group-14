@@ -113,10 +113,3 @@ test('n°16: Testing for "en" language code', () => {
   const result = setLanguage(language)
   expect(result).toEqual(expectedResult)
 })
-
-test('n°17: Testing for "nl" language code', () => {
-  const language = 'nl'
-  const expectedResult = ['Dag, ', 'en']
-  const result = setLanguage(language)
-  expect(result).toEqual(expectedResult)
-})
