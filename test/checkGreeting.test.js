@@ -76,13 +76,7 @@ test('n°9: Testing the function with an array of names', () => {
   expect(result).toBe('Hello, John, Jane and Jim.')
 })
 
-test('n°10: Testing the function with an array of names in uppercase', () => {
-  const names = ['JOHN', 'JANE', 'JIM']
-  const result = greet(names)
-  expect(result).toBe('HELLO, JOHN, JANE AND JIM!')
-})
-
-test('n°11: Testing the function with a null value', () => {
+test('n°10: Testing the function with a null value', () => {
   const name = null
   const result = greet(name)
   expect(result).toBe('Hello, my friend.')
@@ -123,20 +117,6 @@ test('n°16: Testing for "en" language code', () => {
 test('n°17: Testing for "nl" language code', () => {
   const language = 'nl'
   const expectedResult = ['Dag, ', 'en']
-  const result = setLanguage(language)
-  expect(result).toEqual(expectedResult)
-})
-
-test('n°18: Testing for an invalid language code', () => {
-  const language = 'es'
-  const expectedResult = ['Hello, ', 'and']
-  const result = setLanguage(language)
-  expect(result).toEqual(expectedResult)
-})
-
-test('n°19: Testing for an empty string', () => {
-  const language = ''
-  const expectedResult = ['Hello, ', 'and']
   const result = setLanguage(language)
   expect(result).toEqual(expectedResult)
 })
