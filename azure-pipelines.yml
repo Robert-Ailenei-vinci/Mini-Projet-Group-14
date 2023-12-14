@@ -26,7 +26,7 @@ steps:
   displayName: 'Lint code'
 
 - script: |
-    npm run jest --coverage
+    npm run test
   displayName: 'Run tests with coverage'
 
 - script: |
