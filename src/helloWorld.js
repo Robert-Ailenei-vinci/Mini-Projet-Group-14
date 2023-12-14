@@ -14,7 +14,7 @@ function greet (names) {
     const chosenLanguage = getLanguage(names) // should get 'fr' / 'nl' / 'en'
     if (chosenLanguage) {
       const language = setLanguage(chosenLanguage) // return an array with [0] being Hello, etc and [1] being and, etc
-      defaultValueArray = language[1]
+      defaultValueArray = language[0]
       defaultAnd = language[1]
     }
 
