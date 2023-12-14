@@ -12,7 +12,8 @@
         "start": "nodemon ./src/app.js",
         "test": "jest --coverage",
         "test:watch": "jest --watchAll",
-        "code:fix": "prettier --write . && eslint --fix ."
+        "code:fix": "prettier --write . && eslint --fix .",
+        "build": "babel src -d dist"
     },
     "keywords": [
         "devops",
@@ -37,5 +38,8 @@
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
+    },
+    "dependencies": {
+        "babel": "^6.23.0"
     }
 }
