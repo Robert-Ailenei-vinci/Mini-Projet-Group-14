@@ -18,11 +18,11 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    npm run prettier:fix
+    npm run prettier
   displayName: 'Format code with Prettier'
 
 - script: |
-    npm run eslint --fix .
+    npm run lint .
   displayName: 'Lint code'
 
 - script: |
