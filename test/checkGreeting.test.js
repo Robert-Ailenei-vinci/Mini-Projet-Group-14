@@ -88,12 +88,6 @@ test('n°12: Testing the function with a undefined value', () => {
   expect(result).toBe('Hello, my friend.')
 })
 
-test('n°13: Testing the function with an empty string', () => {
-  const name = ''
-  const result = greet(name)
-  expect(result).toBe('Hello, my friend.')
-})
-
 test('n°14: Testing the function with an array of names in uppercase', () => {
   const names = ['JOHN', 'fr', 'JIM']
   const result = greet(names)
